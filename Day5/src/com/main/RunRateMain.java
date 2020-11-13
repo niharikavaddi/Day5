@@ -35,7 +35,7 @@ public class RunRateMain {
 			System.out.println("Enter total overs:");
 			int overs = Integer.parseInt(bufferedReader.readLine());
 			runRate = new RunRate();
-			runRate.calculate(runs, overs);
+			System.out.println(runRate.calculate(runs, overs));
 		} catch (Exception exp) {
 			System.err.println(exp.toString());
 		}
