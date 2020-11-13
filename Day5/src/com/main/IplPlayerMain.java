@@ -27,12 +27,19 @@ public class IplPlayerMain {
 	public static void main(String[] args){
 		String name;
 		int age;
-		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter name:");
-		name = scanner.next();
-		System.out.println("Enter Age");
-		age = scanner.nextInt();
-		IplPlayer iplPlayer = new IplPlayer();
-		iplPlayer.validate(name, age);
+		Scanner scanner = null;
+		try {
+			scanner = new Scanner(System.in);
+			System.out.println("Enter name:");
+			name = scanner.next();
+			System.out.println("Enter Age");
+			age = scanner.nextInt();
+			IplPlayer iplPlayer = new IplPlayer();
+			iplPlayer.validate(name, age);
+		} catch (Exception e) {
+			System.out.println(e.toString());
+		} finally {
+			scanner = null;
+		}
+		
 	}
-}
