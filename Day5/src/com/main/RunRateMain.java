@@ -26,9 +26,10 @@ import com.service.RunRate;
 public class RunRateMain {
 
 	public static void main(String[] args) {
-		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader bufferedReader = null;
 		RunRate runRate = null;
 		try {
+			bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 			System.out.println("Enter total runs:");
 			int runs = Integer.parseInt(bufferedReader.readLine());
 			System.out.println("Enter total overs:");
