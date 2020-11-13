@@ -24,7 +24,7 @@ import com.service.IplPlayer;
  */
 public class IplPlayerMain {
 
-	public static void main(String[] args) throws CustomException {
+	public static void main(String[] args){
 		String name;
 		int age;
 		Scanner scanner = new Scanner(System.in);
